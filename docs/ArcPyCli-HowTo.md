@@ -12,10 +12,12 @@ dotnet tool install -g Universoid.Spatial.Esri.ArcPyCli.Tool
 
 The Command prints all available ArcGIS enabled Python instances.
 
-Options  
--e, --environment -- Switch between the Python environments, if available. (Python 2.7 only 'current' environment available)  
--r, --runtime -- Switch between 'ArcMap' and 'ArcGIS' runtime.  
--a, --architecture -- Switch between 'X32' and 'X64' process architecture. (Only ArcMap.)  
+| Option | Description |
+| ------ | ----------- |
+| -e, --environment | Switch between the Python environments, if available. (Python 2.7 only 'current' environment available) | 
+| -r, --runtime | Switch between 'ArcMap' and 'ArcGIS' runtime. |
+| -a, --architecture | Switch between 'X32' and 'X64' process architecture. (Only ArcMap.) |  
+| --path | Choose this option to get only the Python path on the command line. Use this for Scripts, etc. |
 
 ```
 arcpy-cli list [options] [--path]
@@ -34,11 +36,12 @@ Architecture: X64, Runtime: ArcGIS, Environment: current, Path: C:\Program Files
 
 The Command executes the Python Command with the desired ArcGIS enabled Python environment.
 
-Options  
--e, --environment -- Switch between the Python environments, if available. (Python 2.7 only 'current' environment available)  
--r, --runtime -- Switch between 'ArcMap' and 'ArcGIS' runtime.  
--a, --architecture -- Switch between 'X32' and 'X64' process architecture. (Only ArcMap.)  
---pycmd -- Command delimiter Flag (left side ArcPyCli; rigth side Python)
+| Option | Description |
+| ------ | ----------- |
+| -e, --environment | Switch between the Python environments, if available. (Python 2.7 only 'current' environment available) |
+| -r, --runtime | Switch between 'ArcMap' and 'ArcGIS' runtime. |
+| -a, --architecture | Switch between 'X32' and 'X64' process architecture. (Only ArcMap.) |
+| --pycmd | Command delimiter Flag (left side ArcPyCli; rigth side Python) |
 
 ```
 arcpy-cli run [arcpy options] [--pycmd] [python options] python_command command_args
