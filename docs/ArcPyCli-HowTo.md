@@ -49,7 +49,7 @@ arcpy-cli run [arcpy options] [--pycmd] [python options] python_command command_
 
 Sample:
 ```
-arcpy-cli run -r ArcMap --pycmd -m pip --version
+arcpy-cli run -r ArcMap -a x32 --pycmd -m pip --version
 Prints to console:
 pip 9.0.1 from C:\Python27\ArcGIS10.6\lib\site-packages (python 2.7)
 ```
